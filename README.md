@@ -44,10 +44,8 @@ streamlit run app.py
 
 ## Documentation
 - Docs index: [`docs/README.md`](docs/README.md)
-- PRD: [`docs/prd/Open_GR_WM_PRD.md`](docs/prd/Open_GR_WM_PRD.md)
-- TRD: [`docs/trd/Open_GR_WM_System_Design_TRD.md`](docs/trd/Open_GR_WM_System_Design_TRD.md)
-- System Design PDF: [`docs/system/Open_GR_WM_System_Design.pdf`](docs/system/Open_GR_WM_System_Design.pdf)
-- Feature Slides PDF: [`docs/slides/Open_GR_WM_Product_Features_Slides.pdf`](docs/slides/Open_GR_WM_Product_Features_Slides.pdf)
+- Product Requirement Document PRD: [`docs/prd/Open_GR_WM_PRD.md`](docs/prd/Open_GR_WM_PRD.md)
+- System Design Document and Deep walkthrough of technical choices: [`docs/trd/Open_GR_WM_System_Design_TRD.md`](docs/trd/Open_GR_WM_System_Design_TRD.md)
 
 ## Contributing & Security
 - Contribution guide: [`CONTRIBUTING.md`](CONTRIBUTING.md)
