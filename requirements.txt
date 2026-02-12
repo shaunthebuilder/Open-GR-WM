@@ -1,0 +1,13 @@
+streamlit
+networkx
+numpy
+plotly
+requests
+PyPDF2
+pyvis
+sentence-transformers
+beautifulsoup4
+rapidfuzz
+rank-bm25
+pypdfium2
+Pillow

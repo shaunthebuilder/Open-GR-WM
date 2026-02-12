@@ -1,0 +1,129 @@
+/* --- Global Theme Setup --- */
+@import url('https://fonts.googleapis.com/css2?family=jetbrains-mono:wght@400;700&family=inter:wght@400;600&display=swap');
+
+:root {
+    --background-color: #05070a; /* Ultra dark background */
+    --secondary-background-color: #0e1117; /* Slightly lighter panel background */
+    --text-color: #e0e0e0;
+    --primary-accent: #00ffff; /* Neon Cyan */
+    --secondary-accent: #4d4dff; /* Electric Blue */
+    --glow-strength: 0px 0px 12px rgba(0, 255, 255, 0.3);
+}
+
+/* Force font usage */
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color) !important;
+    background-color: var(--background-color) !important;
+}
+
+/* Monospace for data */
+code, .terminal-output {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* --- Streamlit Component Overrides --- */
+
+/* The main container holding the tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff20;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #808495;
+    font-weight: 600;
+}
+
+/* Active tab styling with an underline glow */
+.stTabs [aria-selected="true"] {
+    background-color: transparent !important;
+    color: var(--primary-accent) !important;
+    box-shadow: inset 0 -2px 0 0 var(--primary-accent), var(--glow-strength);
+}
+
+/* Buttons - Making them look digital */
+.stButton > button {
+    background-color: #1a1d24 !important;
+    color: var(--primary-accent) !important;
+    border: 1px solid var(--secondary-accent) !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    box-shadow: var(--glow-strength);
+    border-color: var(--primary-accent) !important;
+    transform: translateY(-2px);
+}
+
+/* Inputs and Select Boxes */
+.stTextInput > div > div, .stSelectbox > div > div {
+    background-color: #0e1117 !important;
+    border: 1px solid #ffffff20 !important;
+    color: var(--text-color) !important;
+}
+
+/* Focus state for inputs */
+.stTextInput > div > div:focus-within {
+    border-color: var(--primary-accent) !important;
+    box-shadow: var(--glow-strength) !important;
+}
+
+/* --- Custom Classes defined in the Prompt --- */
+
+/* The container for the left control panel */
+.control-deck {
+    background-color: var(--secondary-background-color);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ffffff10;
+}
+
+/* The terminal output area */
+.terminal-output {
+    background-color: #000000;
+    border-left: 3px solid var(--secondary-accent);
+    padding: 15px;
+    font-size: 0.9em;
+    color: #00ff88; /* Matrix green for terminal text */
+    height: 150px;
+    overflow-y: auto;
+}
+
+/* Chat bubbles */
+.user-bubble {
+    background-color: var(--secondary-accent);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px 15px 0 15px;
+    margin-left: auto;
+    max-width: 80%;
+    text-align: right;
+    box-shadow: var(--glow-strength);
+}
+
+.ai-container {
+    background-color: var(--secondary-background-color);
+    border: 1px solid #ffffff20;
+    border-left: 3px solid var(--primary-accent);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Metrics (Hero Figures) */
+[data-testid="stMetricLabel"] {
+    color: #808495 !important;
+    font-size: 0.8em !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--primary-accent) !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
