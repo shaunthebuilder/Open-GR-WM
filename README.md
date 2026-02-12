@@ -49,6 +49,10 @@ streamlit run app.py
 - System Design PDF: [`docs/system/Open_GR_WM_System_Design.pdf`](docs/system/Open_GR_WM_System_Design.pdf)
 - Feature Slides PDF: [`docs/slides/Open_GR_WM_Product_Features_Slides.pdf`](docs/slides/Open_GR_WM_Product_Features_Slides.pdf)
 
+## Contributing & Security
+- Contribution guide: [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- Security policy: [`SECURITY.md`](SECURITY.md)
+
 ## Notes
 - Runtime local artifacts are intentionally not versioned (`rag_store/`, caches, temporary files).
 - This repo is designed for fully local execution.

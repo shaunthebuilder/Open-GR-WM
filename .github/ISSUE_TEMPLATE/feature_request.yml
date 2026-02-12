@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest an improvement for Open GR--WM
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem are you trying to solve?
+      placeholder: Describe the current limitation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe what you want to happen.
+      placeholder: Describe the desired behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternatives or workarounds?
+      placeholder: Optional.
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who benefits and how?
+      placeholder: User impact, performance, reliability, etc.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
